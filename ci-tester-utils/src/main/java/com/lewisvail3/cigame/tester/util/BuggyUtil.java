@@ -10,4 +10,10 @@ public class BuggyUtil {
 	public void foo() {
 		System.out.println("Foo on you!");
 	}
+	
+	public void nullPointerAccess(String arg) {
+		if (arg == null) {
+			System.out.println("Trim null arg: " + arg.trim());
+		}
+	}
 }
