@@ -12,7 +12,7 @@ public class BuggyUtil {
 	}
 	
 	public void nullPointerAccess(String arg) {
-		if (arg == null) {
+		if (arg != null) {
 			System.out.println("Trim null arg: " + arg.trim());
 		}
 	}
